@@ -3,9 +3,17 @@
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Header } from '@/components/ui/header';
+import { useEffect } from 'react';
+import { useLoadingStore } from '@/store/loading';
 
 export default function Home() {
   const t = useTranslations('common');
+  const setLoading = useLoadingStore((state) => state.setLoading);
+
+  useEffect(() => {
+    // 页面加载完成后，设置 loading 为 false
+    setLoading(false);
+  }, [setLoading]);
 
   return (
     <main className="min-h-screen">

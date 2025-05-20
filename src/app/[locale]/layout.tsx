@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Your Company Name",
-  description: "Your company description",
+  title: "云玺集团",
+  description: "让资本触动人心",
 };
 
 async function getMessages(locale: string) {

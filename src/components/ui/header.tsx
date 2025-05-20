@@ -36,12 +36,12 @@ export function Header() {
   const t = useTranslations('navigation');
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#1B1B1B] backdrop-blur-md border-b border-[#E4E4E4]/50">
+      <nav className="container mx-auto px-[80px] py-[13px]">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-900">
-              Logo
+              <img src='/assets/images/logo.png' alt='logo' className='w-[127px] h-[46px]' />
             </Link>
           </div>
 
