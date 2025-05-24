@@ -43,11 +43,13 @@ export function Header() {
             <Link href="/" className="text-xl font-bold text-gray-900">
               <img src='/assets/images/logo.png' alt='logo' className='w-[127px] h-[46px]' />
             </Link>
+            <div className="hidden md:flex md:items-center md:space-x-8">
+              <Navigation t={t} />
+            </div>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <Navigation t={t} />
             <LanguageSwitcher />
           </div>
 
